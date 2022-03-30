@@ -1,0 +1,6 @@
+setting层负责加载配置文件：
+    配置文件config(config.yaml,config.json...)
+    （1）定义接收的结构体及结构体对象（注意结构体怎么嵌套，tag标识用mapstructure)
+    （2）设置配置文件路径
+    （3）将配置文件信息加载到viper
+    （4）将viper信息反序列化到上面定义的结构体对象中：viper.Unmarshal(Conf)

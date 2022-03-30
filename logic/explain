@@ -1,0 +1,10 @@
+logic层做具体的业务处理，和数据库交互的操作（增删改查）调用dao层数据库中的具体函数实现
+    controller中XXX函数调用logic.yyy函数（以注册请求为例）
+    func yyy (){
+        //1.判断用户存不存在：查找数据库中有无这个用户，有的话直接退出，返回响应
+        mysql.aaa()
+        //2.生成UID
+        snoyflake.GenID()
+        //3.保存进数据库：插入操作
+        mysql.bbb()
+    }

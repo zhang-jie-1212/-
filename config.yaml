@@ -1,0 +1,30 @@
+app:
+  name: "bluebell"
+  mode: "dev"
+  port: 9090
+  start_time: "2020-07-01"
+  version: "v0.0.1"
+  machine_id: 1
+auto:
+  auto_expire: 8760
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: 200
+  max_age: 30
+  max_backup: 7
+mysql:
+  host: "127.0.0.1"
+  port: 13306
+  user: "root"
+  password: "root1234"
+  dbname: "bubble"
+  max_open_conn: 200
+  max_idle_conn: 10
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  db: 0
+  pool_size: 100
+
+

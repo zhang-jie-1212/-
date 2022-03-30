@@ -1,0 +1,9 @@
+logger配置日志信息：
+    zap日志库的初始化
+        logger:=zap.new(core,zap.Addcaller())
+        corr:=zapcore.NewCore(encode,writesync,l)
+        encode:设置编码格式即事件类型
+        writesync:以切割的方式设置文件名称等
+        l:日志等级
+    将gin请求信息写入日志
+    将回滚信息写入日志
